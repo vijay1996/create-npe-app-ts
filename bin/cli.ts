@@ -11,7 +11,7 @@ const runCommand = (command:string):boolean => {
     return true;
 }
 
-const appName:string = process.argv[2];
+const appName:string = process.argv[2] || 'your-npe-project';
 const checkoutCommand:string = `git clone --depth 1 https://github.com/vijay1996/create-npe-app-ts.git ${appName}`;
 const installDepsCommand:string = `cd ${appName} && npm install`;
 
@@ -26,3 +26,5 @@ if (!dependenciesInstalled) process.exit(-1);
 console.log('%cyour app has been created successfully!', 'color: black; background: white');
 console.log('');
 console.log('please visit https://github.com/vijay1996/create-npe-app-ts to read documentation.')
+console.log('alternatively, run the following command to start dev server - ')
+console.log(`cd ${appName} && npm run dev`);
