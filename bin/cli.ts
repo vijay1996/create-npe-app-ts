@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { execSync } from "child_process";
+const {execSync} = require('child_process');
 
 const runCommand = (command:string):boolean => {
     try {
