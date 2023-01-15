@@ -1,0 +1,40 @@
+{
+  "name": "@vbr96/create-npe-app-ts",
+  "version": "1.0.0",
+  "description": "This will create a template of node-postgres-express application which will be ready to go without worrying about the boilerplate code",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./build/index.js",
+    "build": "tsc -p .",
+    "dev": "nodemon ./src/index.ts",
+    "migrate-down": "migrate -path ./migrations -database postgres://vijay:vbr96@localhost/threeknots?sslmode=disable -verbose down",
+    "migrate-up": "migrate -path ./migrations -database postgres://vijay:vbr96@localhost/threeknots?sslmode=disable -verbose up",
+    "docker-compose": "docker-compose up"
+  },
+  "dependencies": {
+    "@vbr96/easypg": "^1.1.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "pg": "^8.8.0",
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.15",
+    "@types/node": "^18.11.18",
+    "@types/pg": "^8.6.6",
+    "@types/lodash": "^4.14.191"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vijay1996/create-npe-app-ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vijay1996/create-npe-app-ts/issues"
+  },
+  "homepage": "https://github.com/vijay1996/create-npe-app-ts#readme"
+}
