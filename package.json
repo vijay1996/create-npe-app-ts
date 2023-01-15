@@ -36,5 +36,6 @@
   "bugs": {
     "url": "https://github.com/vijay1996/create-npe-app-ts/issues"
   },
-  "homepage": "https://github.com/vijay1996/create-npe-app-ts#readme"
+  "homepage": "https://github.com/vijay1996/create-npe-app-ts#readme",
+  "bin": "./bin/cli.ts"
 }
