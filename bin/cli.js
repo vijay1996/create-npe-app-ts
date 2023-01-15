@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 const {execSync} = require('child_process');
 
-const runCommand = (command:string):boolean => {
+const runCommand = (command) => {
     try {
         execSync(`${command}`, {stdio: 'inherit'})
     } catch (e) {
@@ -11,9 +11,9 @@ const runCommand = (command:string):boolean => {
     return true;
 }
 
-const appName:string = process.argv[2] || 'your-npe-project';
-const checkoutCommand:string = `git clone --depth 1 https://github.com/vijay1996/create-npe-app-ts.git ${appName}`;
-const installDepsCommand:string = `cd ${appName} && npm install`;
+const appName = process.argv[2] || 'your-npe-project';
+const checkoutCommand = `git clone --depth 1 https://github.com/vijay1996/create-npe-app-ts.git ${appName}`;
+const installDepsCommand = `cd ${appName} && npm install`;
 
 console.log("cloning into repository...");
 const checkedOut = runCommand(checkoutCommand);
