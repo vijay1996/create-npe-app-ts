@@ -1,6 +1,6 @@
 {
   "name": "@vbr96/create-npe-app-ts",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This will create a template of node-postgres-express application which will be ready to go without worrying about the boilerplate code",
   "main": "src/index.ts",
   "scripts": {
