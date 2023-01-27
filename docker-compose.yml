@@ -7,9 +7,9 @@ services:
     ports:
       - 5432:5432
     environment:
-      POSTGRES_PASSWORD:
-      POSTGRES_USER:
-      POSTGRES_DB:
+      POSTGRES_PASSWORD: healthy96band
+      POSTGRES_USER: healthybandroot
+      POSTGRES_DB: healthyband
   
   adminer:
     image: adminer
