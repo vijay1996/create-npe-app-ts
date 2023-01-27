@@ -6,3 +6,4 @@ export function exampleEndpoint (app:Application, conn:Connection) {
         res.send("This is your (N)ode (P)ostgreSQL (E)xpress app.");
     });
 }
+// END OF FILE
